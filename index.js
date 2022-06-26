@@ -130,7 +130,7 @@
 const getSums = (arr) => arr.reduce((acc, item, index) => index === 0 ? [item] : [...acc, acc[index-1] + item]
    ,[])
 
-   [1, 3, ]
+
    
 
 
