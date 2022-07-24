@@ -243,355 +243,358 @@
 
 //  console.log(resultObject);
 
-class Student {
-  #name;
-  #email;
-  #homeworkResults;
+// class Student {
+//   #name;
+//   #email;
+//   #homeworkResults;
 
-  constructor(name, email) {
-    this.#name = name;
-    this.#email = email;
-    this.#homeworkResults = [];
-  }
+//   constructor(name, email) {
+//     this.#name = name;
+//     this.#email = email;
+//     this.#homeworkResults = [];
+//   }
 
-  getName() {
-    return this.#name;
-  }
-  getEmail() {
-    return this.#email;
-  }
+//   getName() {
+//     return this.#name;
+//   }
+//   getEmail() {
+//     return this.#email;
+//   }
 
-  getHomeworkResults() {
-    return this.#homeworkResults;
-  }
+//   getHomeworkResults() {
+//     return this.#homeworkResults;
+//   }
 
-  addHomeworkResult(topic, success) {
-   //   console.log(topic, success)f
-    this.#homeworkResults.push({ topic, success });
-  }
-}
+//   addHomeworkResult(topic, success) {
+//    //   console.log(topic, success)f
+//     this.#homeworkResults.push({ topic, success });
+//   }
+// }
 
-const student = new Student("Taras", "taras@gmail.com");
+// const student = new Student("Taras", "taras@gmail.com");
 
-student.addHomeworkResult("HTML", true);
+// student.addHomeworkResult("HTML", true);
 
-// console.log(student.getHomeworkResults())
+// // console.log(student.getHomeworkResults())
 
-const listOfStudents = [
-  {
-    name: "John",
-    email: "john@gmail.com",
-  },
-  {
-    name: "Jane",
-    email: "jane@gmail.com",
-  },
-  {
-    name: "Jack",
-    email: "jack@gmail.com",
-  },
-  {
-    name: "Mary",
-    email: "mary@gmail.com",
-  },
-  {
-    name: "Robert",
-    email: "robert@gmail.com",
-  },
-  {
-    name: "Ann",
-    email: "ann@gmail.com",
-  },
-  {
-    name: "Brad",
-    email: "brad@gmail.com",
-  },
-  {
-    name: "Lisa",
-    email: "lisa@gmail.com",
-  },
-  {
-    name: "Matthew",
-    email: "matthew@gmail.com",
-  },
-  {
-    name: "Sandra",
-    email: "sandra@gmail.com",
-  },
-];
+// const listOfStudents = [
+//   {
+//     name: "John",
+//     email: "john@gmail.com",
+//   },
+//   {
+//     name: "Jane",
+//     email: "jane@gmail.com",
+//   },
+//   {
+//     name: "Jack",
+//     email: "jack@gmail.com",
+//   },
+//   {
+//     name: "Mary",
+//     email: "mary@gmail.com",
+//   },
+//   {
+//     name: "Robert",
+//     email: "robert@gmail.com",
+//   },
+//   {
+//     name: "Ann",
+//     email: "ann@gmail.com",
+//   },
+//   {
+//     name: "Brad",
+//     email: "brad@gmail.com",
+//   },
+//   {
+//     name: "Lisa",
+//     email: "lisa@gmail.com",
+//   },
+//   {
+//     name: "Matthew",
+//     email: "matthew@gmail.com",
+//   },
+//   {
+//     name: "Sandra",
+//     email: "sandra@gmail.com",
+//   },
+// ];
 
-const homeworkResults = [
-  {
-    topic: "HTML Basics",
-    results: [
-      {
-        email: "john@gmail.com",
-        success: true,
-      },
-      {
-        email: "jane@gmail.com",
-        success: true,
-      },
-      {
-        email: "jack@gmail.com",
-        success: true,
-      },
-      {
-        email: "mary@gmail.com",
-        success: true,
-      },
-      {
-        email: "robert@gmail.com",
-        success: true,
-      },
-      {
-        email: "ann@gmail.com",
-        success: true,
-      },
-      {
-        email: "brad@gmail.com",
-        success: true,
-      },
-      {
-        email: "lisa@gmail.com",
-        success: true,
-      },
-      {
-        email: "matthew@gmail.com",
-        success: true,
-      },
-      {
-        email: "sandra@gmail.com",
-        success: true,
-      },
-    ],
-  },
-  {
-    topic: "CSS Basics",
-    results: [
-      {
-        email: "john@gmail.com",
-        success: false,
-      },
-      {
-        email: "jane@gmail.com",
-        success: true,
-      },
-      {
-        email: "jack@gmail.com",
-        success: true,
-      },
-      {
-        email: "mary@gmail.com",
-        success: false,
-      },
-      {
-        email: "robert@gmail.com",
-        success: true,
-      },
-      {
-        email: "ann@gmail.com",
-        success: true,
-      },
-      {
-        email: "brad@gmail.com",
-        success: true,
-      },
-      {
-        email: "lisa@gmail.com",
-        success: false,
-      },
-      {
-        email: "matthew@gmail.com",
-        success: true,
-      },
-      {
-        email: "sandra@gmail.com",
-        success: true,
-      },
-    ],
-  },
-  {
-    topic: "JS Basics",
-    results: [
-      {
-        email: "john@gmail.com",
-        success: true,
-      },
-      {
-        email: "jane@gmail.com",
-        success: false,
-      },
-      {
-        email: "jack@gmail.com",
-        success: true,
-      },
-      {
-        email: "mary@gmail.com",
-        success: true,
-      },
-      {
-        email: "robert@gmail.com",
-        success: true,
-      },
-      {
-        email: "ann@gmail.com",
-        success: false,
-      },
-      {
-        email: "brad@gmail.com",
-        success: true,
-      },
-      {
-        email: "lisa@gmail.com",
-        success: true,
-      },
-      {
-        email: "matthew@gmail.com",
-        success: false,
-      },
-      {
-        email: "sandra@gmail.com",
-        success: true,
-      },
-    ],
-  },
-  {
-    topic: "DOM",
-    results: [
-      {
-        email: "john@gmail.com",
-        success: false,
-      },
-      {
-        email: "jane@gmail.com",
-        success: true,
-      },
-      {
-        email: "jack@gmail.com",
-        success: true,
-      },
-      {
-        email: "mary@gmail.com",
-        success: true,
-      },
-      {
-        email: "robert@gmail.com",
-        success: false,
-      },
-      {
-        email: "ann@gmail.com",
-        success: true,
-      },
-      {
-        email: "brad@gmail.com",
-        success: true,
-      },
-      {
-        email: "lisa@gmail.com",
-        success: true,
-      },
-      {
-        email: "matthew@gmail.com",
-        success: false,
-      },
-      {
-        email: "sandra@gmail.com",
-        success: true,
-      },
-    ],
-  },
-  {
-    topic: "AJAX",
-    results: [
-      {
-        email: "john@gmail.com",
-        success: false,
-      },
-      {
-        email: "jane@gmail.com",
-        success: true,
-      },
-      {
-        email: "jack@gmail.com",
-        success: false,
-      },
-      {
-        email: "mary@gmail.com",
-        success: true,
-      },
-      {
-        email: "robert@gmail.com",
-        success: true,
-      },
-      {
-        email: "ann@gmail.com",
-        success: false,
-      },
-      {
-        email: "brad@gmail.com",
-        success: true,
-      },
-      {
-        email: "lisa@gmail.com",
-        success: true,
-      },
-      {
-        email: "matthew@gmail.com",
-        success: true,
-      },
-      {
-        email: "sandra@gmail.com",
-        success: true,
-      },
-    ],
-  },
-];
+// const homeworkResults = [
+//   {
+//     topic: "HTML Basics",
+//     results: [
+//       {
+//         email: "john@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "jane@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "jack@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "mary@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "robert@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "ann@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "brad@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "lisa@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "matthew@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "sandra@gmail.com",
+//         success: true,
+//       },
+//     ],
+//   },
+//   {
+//     topic: "CSS Basics",
+//     results: [
+//       {
+//         email: "john@gmail.com",
+//         success: false,
+//       },
+//       {
+//         email: "jane@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "jack@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "mary@gmail.com",
+//         success: false,
+//       },
+//       {
+//         email: "robert@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "ann@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "brad@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "lisa@gmail.com",
+//         success: false,
+//       },
+//       {
+//         email: "matthew@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "sandra@gmail.com",
+//         success: true,
+//       },
+//     ],
+//   },
+//   {
+//     topic: "JS Basics",
+//     results: [
+//       {
+//         email: "john@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "jane@gmail.com",
+//         success: false,
+//       },
+//       {
+//         email: "jack@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "mary@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "robert@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "ann@gmail.com",
+//         success: false,
+//       },
+//       {
+//         email: "brad@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "lisa@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "matthew@gmail.com",
+//         success: false,
+//       },
+//       {
+//         email: "sandra@gmail.com",
+//         success: true,
+//       },
+//     ],
+//   },
+//   {
+//     topic: "DOM",
+//     results: [
+//       {
+//         email: "john@gmail.com",
+//         success: false,
+//       },
+//       {
+//         email: "jane@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "jack@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "mary@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "robert@gmail.com",
+//         success: false,
+//       },
+//       {
+//         email: "ann@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "brad@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "lisa@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "matthew@gmail.com",
+//         success: false,
+//       },
+//       {
+//         email: "sandra@gmail.com",
+//         success: true,
+//       },
+//     ],
+//   },
+//   {
+//     topic: "AJAX",
+//     results: [
+//       {
+//         email: "john@gmail.com",
+//         success: false,
+//       },
+//       {
+//         email: "jane@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "jack@gmail.com",
+//         success: false,
+//       },
+//       {
+//         email: "mary@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "robert@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "ann@gmail.com",
+//         success: false,
+//       },
+//       {
+//         email: "brad@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "lisa@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "matthew@gmail.com",
+//         success: true,
+//       },
+//       {
+//         email: "sandra@gmail.com",
+//         success: true,
+//       },
+//     ],
+//   },
+// ];
 
-class ItSchool {
-  #students;
-  #failedLimit;
+// class ItSchool {
+//   #students;
+//   #failedLimit;
 
-  constructor(students, failedLimit) {
-    this.#students = students;
-    this.#failedLimit = failedLimit;
-  }
+//   constructor(students, failedLimit) {
+//     this.#students = students;
+//     this.#failedLimit = failedLimit;
+//   }
 
-  getSuperStudents() {
-    return this.#students.map(
-      (student) => new Student(student.name, student.email)
-    );
-  }
+//   getSuperStudents() {
+//     return this.#students.map(
+//       (student) => new Student(student.name, student.email)
+//     );
+//   }
 
-  printStudentsList() {
-    //  console.log(this.getSuperStudents())
-    const superStudents = this.getSuperStudents();
-    superStudents.forEach((student) => {
-      console.log(`name: ${student.getName()}, email: ${student.getEmail()} `);
-      console.log(student.getHomeworkResults());
-    });
-  }
+//   printStudentsList() {
+//     //  console.log(this.getSuperStudents())
+//     const superStudents = this.getSuperStudents();
+//     superStudents.forEach((student) => {
+//       console.log(`name: ${student.getName()}, email: ${student.getEmail()} `);
+//       console.log(student.getHomeworkResults());
+//     });
+//   }
 
-  addHomeworkResults(homeworkResults) {
-   //   console.log('123')
-    const superStudents = this.getSuperStudents();
-   //  console.log(superStudents)
-    superStudents.forEach((student) => {
-      //  console.log(student)
-      homeworkResults.results.forEach((result) => {
-         // console.log(result)
-        if (result.email === student.getEmail()) {
-         //   console.log('1')
-         console.log(homeworkResults.topic, result.success)
-          student.addHomeworkResult(homeworkResults.topic, result.success);
-        }
-      });
-    });
-  }
-}
+//   addHomeworkResults(homeworkResults) {
+//    //   console.log('123')
+//     const superStudents = this.getSuperStudents();
+//    //  console.log(superStudents)
+//     superStudents.forEach((student) => {
+//       //  console.log(student)
+//       homeworkResults.results.forEach((result) => {
+//          // console.log(result)
+//         if (result.email === student.getEmail()) {
+//          //   console.log('1')
+//          console.log(homeworkResults.topic, result.success)
+//           student.addHomeworkResult(homeworkResults.topic, result.success);
+//         }
+//       });
+//     });
+//   }
+// }
 
-const itSchool = new ItSchool(listOfStudents, 1);
+// const itSchool = new ItSchool(listOfStudents, 1);
 
-itSchool.addHomeworkResults(homeworkResults[0]);
+// itSchool.addHomeworkResults(homeworkResults[0]);
 
-itSchool.printStudentsList();
+// itSchool.printStudentsList();
+
+
+
